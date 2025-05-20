@@ -5,10 +5,17 @@ html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
 img {
     width: 100%;
     display: block;
+    border-radius: 7px;
    
+}
+body{
+  background-color: rgb( 18, 24, 33);
 }
 h1{
     width: 6em;
+    padding-top: 1em;
+
+   
 }
 div.container{
     position: relative;
@@ -19,6 +26,7 @@ div.home-container{
   position: relative;
   max-width: 70em;
   margin: auto;
+  
 }
 h2,p,nav,header{
     margin: 0.5rem;
@@ -26,20 +34,23 @@ h2,p,nav,header{
 }
 nav{
     margin-bottom: 1em;
-    margin-top: 1em;
+    /* margin-top: 1em; */
     font-weight: bold;
     margin-left: 0.5;
+    
     
 }
 
 h2{
-    margin-top: 0;  
-    margin-bottom: 0;
-    font-family: serif ;
-    font-weight: bold;
+    margin-top: 0.5em;  
+   line-height: 1em;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+   
     font-size: 3em;
-    color: rgb( 68, 98, 135);
-    /* margin-left: 0.2em; */
+    color:  rgb(249, 244, 239);
+    
 }
 section.mainstory h2{
     font-size: 3em;
@@ -51,16 +62,21 @@ section.secondary h2{
 }
 
 a{
-    color: rgb( 68, 98, 135);
+    color: rgb(240, 209, 10);
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    
 }
 p{
-    color: rgb(0, 0, 0);
+    color: rgb(249, 244, 239);
     padding-top: 0;
     margin-top: 0;
     padding-bottom: 2em;
-    font-family: sans-serif;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300;
+    font-style: normal;
 
 }
 
@@ -70,17 +86,20 @@ section.second h2{
 
 section.third h2{
     font-size: 1.5em;
-    border-top: solid 1px rgb( 68, 98, 135);
+    border-top: solid 1px rgb(18, 24, 33);
     padding-top: 0.5em;
 }
 ul li{
     list-style: none;
+    text-transform: uppercase;
+    font-family: Proxima Nova;
+    font-size: 1.2em;
+  
 }
 
 footer{
-    background-color: rgb( 68, 98, 135);
-    color: rgb(255, 255, 255);
     padding: 1em;
+    color: rgb(249, 244, 239);
     font-size: 1em;
     font-family: sans-serif;
    
@@ -90,11 +109,24 @@ figcaption{
     margin-bottom: 1em;
     margin-left: 0.5em;
     font-family: sans-serif;
+    color: rgb( 240, 209, 10);
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 0.5em;
 }
 
 aside{
-    background-color: rgb(201, 198, 247);
+    background-color:rgb( 240, 209, 10);
     padding: 1em 0.5em 1em 0.5em;
+    
+}
+aside p{
+  color: rgb(18, 24, 33);
+  padding-left: 0em;
+}
+aside h2{
+  color: rgb(18, 24, 33);
 }
 
 
@@ -103,13 +135,54 @@ aside{
    nav ul li{
     display: inline;
     margin-right: 1em;
-    
    }
+
    nav{
     margin-left: 0;
    }
+  aside{
+    background-color: rgba(249, 244, 239, 0);
+     padding: 0em 0em 0em 0em;
+    
+  }
+  .secondary{
+    background-color: rgb(249, 244, 239);
+    padding: 0.5em;
+    border-radius: 7px;
+    margin-bottom: 2em;
+  }
+ .third{
+  background-color: rgb( 249, 244, 239);
+  padding: 1em;
+  border-radius: 7px;
+  margin-bottom: 1em;
+ }
 
+aside.secondary h2{
+  color: rgb( 18, 24, 33);
+}
+.third h2{
+  color: rgb( 18, 24, 33);
+  border-top: solid 3px rgb( 18, 24, 33);
+  margin-top: 0em;
+}
+.third p{
+  color: rgb(18, 24, 33);
   
+}
+  figcaption{
+    margin-left: 0em;
+  }
+footer{
+  color: rgb( 240, 209, 10);
+  padding-bottom: 1em;
+  padding-top: 1em;
+  border-top: solid 1px rgb(240, 209, 10);
+  margin-top: 1em;
+  padding-left: 0em;
+}
+
+
   }
 
 
@@ -253,5 +326,11 @@ aside{
 
   aside p {
     margin-bottom: 1em;
+    color: rgb(18, 24, 33);
   }
+  
+  
+  /* aside h2{
+    color: rgb(249, 244, 239);
+  } */
 }
