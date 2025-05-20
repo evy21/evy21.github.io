@@ -37,10 +37,10 @@ nav{
     /* margin-top: 1em; */
     font-weight: bold;
     margin-left: 0.5;
-    
-    
 }
-
+.mainstory h2{
+  color: rgb(240, 209, 10);
+}
 h2{
     margin-top: 0.5em;  
    line-height: 1em;
